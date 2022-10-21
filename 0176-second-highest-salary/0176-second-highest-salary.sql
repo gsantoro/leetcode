@@ -12,3 +12,15 @@ select
     where 
       r.rnk = 2
     limit 1), null) as SecondHighestSalary
+    
+
+# NOTE: alternative implementation
+# select
+# ifnull((
+# select
+#   distinct salary
+# FROM 
+#   Employee e
+# order by
+#   salary desc
+# limit 1 offset 1), null) as SecondHighestSalary
