@@ -19,7 +19,4 @@ class Solution:
             else:
                 if x_i != x_0:
                     return False
-                
-            
-        
         return True
