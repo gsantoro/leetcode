@@ -1,7 +1,7 @@
 class Solution:
     def matrixReshape(self, mat: List[List[int]], r: int, c: int) -> List[List[int]]:
         m, n = len(mat), len(mat[0])
-        if r * c > m * n or m * n > r * c:  # note: illegal
+        if r * c != m * n:  # note: illegal
             return mat
         if m == r and n == c: # note: same shape
             return mat
