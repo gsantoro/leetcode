@@ -15,12 +15,14 @@ class Solution:
 #                 del ans[c]
 #         return ""
 
-
+        #sol 2. with sorting
         s = sorted(s)
         t = sorted(t)
         
+        # check for diff character in "s"
         for i in range(len(t) - 1):
             if s[i] != t[i]:
                 return t[i]
             
+        # otherwise it must be the last char in "t"
         return t[-1]
