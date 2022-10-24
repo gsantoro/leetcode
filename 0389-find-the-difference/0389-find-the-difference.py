@@ -13,4 +13,4 @@ class Solution:
             if ans[c] == 0:
                 del ans[c]
                 
-        return list(ans.keys())[0]
+        return ""
