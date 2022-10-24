@@ -4,6 +4,7 @@ class Solution:
         # sol1: one liner
         # return "".join(a + b for a, b in zip_longest(word1, word2, fillvalue=""))
         
+        # sol2: without zip_longest
         n1, n2 = len(word1), len(word2)
         n = max(n1, n2)
         ans = []
