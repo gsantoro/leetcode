@@ -9,6 +9,6 @@ class Solution:
         # in:  1101
         # out: 13
         while head:
-            ans = (ans << 1) + head.val
+            ans = ans << 1 | head.val
             head = head.next
         return ans
