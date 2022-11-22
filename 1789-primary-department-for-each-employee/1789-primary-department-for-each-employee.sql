@@ -1,7 +1,7 @@
 # Write your MySQL query statement below
 select
     employee_id,
-    min(department_id) as department_id
+    department_id
 from
     Employee e
 group by
